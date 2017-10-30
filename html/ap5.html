@@ -1,0 +1,293 @@
+<html>
+<head>
+<title>learning html</title>
+</head>
+<body>
+<p>  Question Bank-2017
+
+TIT-402 		UNIX AND SHELL PROGRAMMING
+UNIT-I
+Q1.	What is UNIX OS? What are its salient features?
+Q2.	Differentiate between Multitasking and Multiuser OS?
+Q3.	Which different security mechanisms are available in UNIX?
+Q4.	Explain 3 layered architecture of UNIX, with diagram?
+Q5.	Explain the UNIX file system with diagram?
+Q6.	What are the components of a UNIX file system? What are the content of an Inode block? 
+Q7.	What are system calls and what role do they play in the system?
+Q8.	Explain vi editor? What are the 3 modes of the vi editor?
+Q9.	What are the basic attributes of a file in UNIX? Differentiate between l s &ls  –l.
+Q10.	Explain the types of files in UNIX OS with examples.
+
+UNIT-II
+Q1.	What are the basic file manipulated commands? Explain with examples.
+Q2.	What are the basic directory manipulated commands? Explain with examples.
+Q3.	What are the basic system Related commands? Explain with examples.
+Q4.	How to find hidden files in current directory? ls -lrta
+Q5.	How to tails last 200 lines of any log fine?    $ tail -200f filename.txt
+Q6.	find all files in current and subdirectories which contains 'log' name?  $ find . -name 'log'
+Q7.	How will you find which operating system your system is running on in UNIX?uname –a
+Q8.	How do DOS and UNIX text files differ ?name the utilities that convert files between these two formats ?
+Q9.	Name three advantages zip over gzip .how do we use tar to add two files to an archive , explain with examples.
+Q10.Differentiate cmp command from diff command.
+Ans. The cmp command is used mainly to compare two files byte by byte, after which the first encountered mismatch is shown. On the other hand, the diff command is used to indicate the changes that are to be made in order to make the two files identical to each other.
+Q11.Write short-notes on:
+a.	Cal  b. date c. echo    d. script       e. file    f. wc   g.  passwd  h.banner
+
+UNIT –III
+Q1.	Why we write a shell script? Write down the steps to execute and run a shell script?
+Q2.	What the shell wild-cards/meta-characters give examples.
+Q3.	What are the different types of shell available in UNIX ,also explain restricted shell ?
+Q4.	Shell Script to Say Good Morning/Afternoon/Evening
+temph=`date | cut -c12-13`
+if [ $temph -lt 12 ]
+then
+mess="Good Morning $LOGNAME, Have nice day!"
+fi
+if [ $temph -gt 12 -a $temph -le 16 ]
+then
+mess="Good Afternoon $LOGNAME"
+fi
+if [ $temph -gt 16 -a $temph -le 18 ]
+then
+mess="Good Evening $LOGNAME"
+fi
+
+Q5.Basic Math Calculator (Case Statement)
+echo enter first number
+read a
+echo enter second number
+read b
+echo enter operation
+read c
+case $c in
++) z=`expr $a + $b`;;
+-) z=`expr $a - $b`;;
+/) z=`expr $a / $b`;;
+x) z=`expr $a \* $b`;;
+esac
+echo answer is $z
+Q6.Basic Math Calculator Using Command Line Argument
+a=$1
+c=$2
+b=$3
+case $c in
++) z=`expr $a + $b`;;
+-) z=`expr $a - $b`;;
+/) z=`expr $a / $b`;;
+x) z=`expr $a \* $b`;;
+esac
+echo answer is $z
+
+Q7.Shell Program to Find whether the Character is Vowel or Not
+clear
+echo "Enter any character: "
+readch
+case $ch in
+ "a") echo "It is a vowel.";;
+ "e") echo "It is a vowel.";;
+ "i") echo "It is a vowel.";;
+ "o") echo "It is a vowel.";;
+"u") echo "It is a vowel.";;
+ *) echo "It is not a vowel."
+esac
+Q8.Shell Script to Determine Whether Given File Exist or Not
+echo enter file name
+readfname
+if [ -f $fname ]
+then
+echo "$fname file exist"
+else
+echo "sorry, $fname file does not exist"
+fi
+
+
+Q9.Shell Script to Generate the Table of Given Number
+clear
+echo enter any number
+read n
+for ((i=1;i<=10;i++)
+do
+m=`expr $n \* $i`
+echo “$n * $i = $m”
+done
+Q10.Shell Script to convert data of a file from lower to uppercase.
+#!/bin/bash
+# get filename
+echo -n "Enter File Name : "
+readfileName
+
+# make sure file exits for reading
+if [ ! -f $fileName ]; then
+echo "Filename $fileName does not exists."
+exit 1
+fi
+
+# convert uppercase to lowercase using tr command
+tr '[A-Z]' '[a-z]' < $fileName
+
+UNIT –IV
+Q1.What is a system administrator? Explain various function of it.
+Q2.How will you find the total usage of the current directory tree?
+Q3.Explain the concept of mounting and unmounting an external file system?
+Q4.Give the utilities available for Recovery and backup in UNIX environment.
+Q5.Give the utilities available for handling user account in UNIX environment.
+Q6.Give steps for start-up and shutdown UNIX OS. Differentiate between halt and shutdown.
+Q7.Write short notes on:
+Disk Quota			User Accounting
+
+UNIT –V
+Q1. Differentiate between Library functions and system call.
+Q2.Write short notes on:
+YACC, LEX, M4, Debugger tools: Dbx, Adb, Sdb, Strip and Ctrace.
+Q3.ExplainFilters using regular expressions: grep and sed& Advanced filters: awk, 
+perl.
+
+
+
+######################ALL THE BEST! ##############################
+</p>
+<p>  Question Bank-2017
+
+TIT-402 		UNIX AND SHELL PROGRAMMING
+UNIT-I
+Q1.	What is UNIX OS? What are its salient features?
+Q2.	Differentiate between Multitasking and Multiuser OS?
+Q3.	Which different security mechanisms are available in UNIX?
+Q4.	Explain 3 layered architecture of UNIX, with diagram?
+Q5.	Explain the UNIX file system with diagram?
+Q6.	What are the components of a UNIX file system? What are the content of an Inode block? 
+Q7.	What are system calls and what role do they play in the system?
+Q8.	Explain vi editor? What are the 3 modes of the vi editor?
+Q9.	What are the basic attributes of a file in UNIX? Differentiate between l s &ls  –l.
+Q10.	Explain the types of files in UNIX OS with examples.
+
+UNIT-II
+Q1.	What are the basic file manipulated commands? Explain with examples.
+Q2.	What are the basic directory manipulated commands? Explain with examples.
+Q3.	What are the basic system Related commands? Explain with examples.
+Q4.	How to find hidden files in current directory? ls -lrta
+Q5.	How to tails last 200 lines of any log fine?    $ tail -200f filename.txt
+Q6.	find all files in current and subdirectories which contains 'log' name?  $ find . -name 'log'
+Q7.	How will you find which operating system your system is running on in UNIX?uname –a
+Q8.	How do DOS and UNIX text files differ ?name the utilities that convert files between these two formats ?
+Q9.	Name three advantages zip over gzip .how do we use tar to add two files to an archive , explain with examples.
+Q10.Differentiate cmp command from diff command.
+Ans. The cmp command is used mainly to compare two files byte by byte, after which the first encountered mismatch is shown. On the other hand, the diff command is used to indicate the changes that are to be made in order to make the two files identical to each other.
+Q11.Write short-notes on:
+a.	Cal  b. date c. echo    d. script       e. file    f. wc   g.  passwd  h.banner
+
+UNIT –III
+Q1.	Why we write a shell script? Write down the steps to execute and run a shell script?
+Q2.	What the shell wild-cards/meta-characters give examples.
+Q3.	What are the different types of shell available in UNIX ,also explain restricted shell ?
+Q4.	Shell Script to Say Good Morning/Afternoon/Evening
+temph=`date | cut -c12-13`
+if [ $temph -lt 12 ]
+then
+mess="Good Morning $LOGNAME, Have nice day!"
+fi
+if [ $temph -gt 12 -a $temph -le 16 ]
+then
+mess="Good Afternoon $LOGNAME"
+fi
+if [ $temph -gt 16 -a $temph -le 18 ]
+then
+mess="Good Evening $LOGNAME"
+fi
+
+Q5.Basic Math Calculator (Case Statement)
+echo enter first number
+read a
+echo enter second number
+read b
+echo enter operation
+read c
+case $c in
++) z=`expr $a + $b`;;
+-) z=`expr $a - $b`;;
+/) z=`expr $a / $b`;;
+x) z=`expr $a \* $b`;;
+esac
+echo answer is $z
+Q6.Basic Math Calculator Using Command Line Argument
+a=$1
+c=$2
+b=$3
+case $c in
++) z=`expr $a + $b`;;
+-) z=`expr $a - $b`;;
+/) z=`expr $a / $b`;;
+x) z=`expr $a \* $b`;;
+esac
+echo answer is $z
+
+Q7.Shell Program to Find whether the Character is Vowel or Not
+clear
+echo "Enter any character: "
+readch
+case $ch in
+ "a") echo "It is a vowel.";;
+ "e") echo "It is a vowel.";;
+ "i") echo "It is a vowel.";;
+ "o") echo "It is a vowel.";;
+"u") echo "It is a vowel.";;
+ *) echo "It is not a vowel."
+esac
+Q8.Shell Script to Determine Whether Given File Exist or Not
+echo enter file name
+readfname
+if [ -f $fname ]
+then
+echo "$fname file exist"
+else
+echo "sorry, $fname file does not exist"
+fi
+
+
+Q9.Shell Script to Generate the Table of Given Number
+clear
+echo enter any number
+read n
+for ((i=1;i<=10;i++)
+do
+m=`expr $n \* $i`
+echo “$n * $i = $m”
+done
+Q10.Shell Script to convert data of a file from lower to uppercase.
+#!/bin/bash
+# get filename
+echo -n "Enter File Name : "
+readfileName
+
+# make sure file exits for reading
+if [ ! -f $fileName ]; then
+echo "Filename $fileName does not exists."
+exit 1
+fi
+
+# convert uppercase to lowercase using tr command
+tr '[A-Z]' '[a-z]' < $fileName
+
+UNIT –IV
+Q1.What is a system administrator? Explain various function of it.
+Q2.How will you find the total usage of the current directory tree?
+Q3.Explain the concept of mounting and unmounting an external file system?
+Q4.Give the utilities available for Recovery and backup in UNIX environment.
+Q5.Give the utilities available for handling user account in UNIX environment.
+Q6.Give steps for start-up and shutdown UNIX OS. Differentiate between halt and shutdown.
+Q7.Write short notes on:
+Disk Quota			User Accounting
+
+UNIT –V
+Q1. Differentiate between Library functions and system call.
+Q2.Write short notes on:
+YACC, LEX, M4, Debugger tools: Dbx, Adb, Sdb, Strip and Ctrace.
+Q3.ExplainFilters using regular expressions: grep and sed& Advanced filters: awk, 
+perl.
+
+
+
+######################ALL THE BEST! ##############################
+</p>
+</body>
+<html>
